@@ -8,9 +8,15 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
+import { useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Meal = (props) => {
-  const { strMeal, strInstructions, strMealThumb } = props.meal;
+  const { idMeal, strMeal, strInstructions, strMealThumb } = props.meal;
+  const history = useHistory();
+  const handleClick = () => {
+    history.push(`/meal/${idMeal}`);
+  };
   return (
     <Card sx={{ maxWidth: 445 }}>
       <CardActionArea>
@@ -30,7 +36,12 @@ const Meal = (props) => {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button variant="outlined" size="small" color="secondary">
+        <Button
+          onClick={handleClick}
+          variant="outlined"
+          size="small"
+          color="secondary"
+        >
           View More
         </Button>
       </CardActions>

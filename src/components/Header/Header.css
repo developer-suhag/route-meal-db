@@ -15,3 +15,19 @@
   border-radius: 5px;
   border: none;
 }
+
+.menu-item {
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 15px;
+  margin-right: 10px;
+  font-size: 16px;
+  color: #2a9d8f;
+  font-weight: 500;
+}
+
+.selected {
+  color: #e63946;
+  font-weight: 600;
+  font-size: 18px;
+}

@@ -23,13 +23,13 @@ const MealDetails = () => {
       setMeal(data.meals[0]);
     };
     loadMeal();
-  }, []);
+  }, [mealId]);
   const { strMeal, strInstructions, strMealThumb, strYoutube } = meal;
   return (
     <Container
       sx={{
         p: 4,
-        bgcolor: "#f1faee",
+        bgColor: "#f1faee",
         textAlign: "center",
         marginTop: 4,
         marginBottom: 4,
@@ -68,7 +68,7 @@ const MealDetails = () => {
                 color="error"
                 variant="contained"
               >
-                Contained
+                View Tutorial
               </Button>
             </CardActions>
           </Card>

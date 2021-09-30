@@ -1,15 +1,13 @@
-import { Container, Grid } from "@mui/material";
-import React, { useEffect, useState } from "react";
 import logo from "../../images/logo.png";
 import "./Header.css";
 import TextField from "@mui/material/TextField";
-import Restaurent from "../Restaurent/Restaurent";
 import { NavLink } from "react-router-dom";
+import { Container } from "@mui/material";
 
 const Header = (props) => {
   const { handleSearch } = props;
   return (
-    <div>
+    <Container>
       <div bgColor="primary.main" className="nav-bar">
         <div>
           <img src={logo} alt="" />
@@ -39,7 +37,7 @@ const Header = (props) => {
           </NavLink>
         </div>
       </div>
-    </div>
+    </Container>
   );
 };
 

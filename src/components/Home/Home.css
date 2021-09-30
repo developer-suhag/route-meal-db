@@ -1,0 +1,7 @@
+.restaurent {
+  background: url(../../images/restaurent.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 200px 0;
+}

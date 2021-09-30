@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Header from "./components/Header/Header";
 import { useEffect, useState } from "react";
@@ -29,6 +28,7 @@ function App() {
     const searchTextValue = e.target.value;
     setSearchText(searchTextValue);
   };
+  // handle error
   return (
     <div className="App">
       <Router>

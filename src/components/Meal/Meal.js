@@ -9,7 +9,6 @@ import {
 } from "@mui/material";
 import React from "react";
 import { useHistory } from "react-router-dom";
-import { Link } from "react-router-dom";
 
 const Meal = (props) => {
   const { idMeal, strMeal, strInstructions, strMealThumb } = props.meal;

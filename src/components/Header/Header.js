@@ -32,9 +32,6 @@ const Header = (props) => {
           >
             Restaurent
           </NavLink>
-          <NavLink to="/about" activeClassName="selected" className="menu-item">
-            About
-          </NavLink>
         </div>
       </div>
     </Container>
